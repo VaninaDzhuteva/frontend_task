@@ -1,0 +1,217 @@
+#library{
+    .gray-text{
+        color: $gray-color;}
+    .library-card{
+        -webkit-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
+        -moz-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
+        box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
+    }
+    .card-content{
+        padding: 20px;
+    }
+    // First card
+    .video-img{
+        @include backgroundImg('video.png', contain, 173px);
+        @include topRadius(5px, 5px);
+      .library-card-header{
+        @include linearGradient(120deg, $blue-gradient-color, $green-gradient-color);  
+        @include topRadius(5px, 5px);
+        width: 100%;
+        height: 173px;
+      }
+    }
+    .video .type{
+        @include lybraryType(5px, $types-blue-bg, 90px, 3px);
+    }
+    // Second card
+    .marketing-img{
+        @include backgroundImg('marketing.png', contain ,173px);
+        @include topRadius(5px, 5px);
+      .library-card-header{
+        @include linearGradient(120deg, $blue-gradient-color-two, $purple-gradient-color);  
+        @include topRadius(5px, 5px);
+        width: 100%;
+        height: 173px;
+      }
+    }
+    .marketing .type{
+        @include lybraryType(5px, $types-green-bg, 90px, 3px);
+    }
+    // Third card
+    .content-img{
+        @include backgroundImg('content.png', contain, 173px);
+        @include topRadius(5px, 5px);
+      .library-card-header{
+        @include linearGradient(120deg, $orange-gradient-color, $pink-gradient-color);  
+        @include topRadius(5px, 5px);
+        width: 100%;
+        height: 173px;
+      }
+    }
+    .content .type{
+        @include lybraryType(5px, $types-pink-bg, 90px, 3px);
+    }
+}
+
+// Topics
+#topics{
+    background-color: $light-gray-bg;
+
+    .arrow-container{  
+        width: 90px;
+        height: 90px;
+        border-radius: 50px;
+        position: relative;
+        top: -50px;
+        background-color: $light-gray-bg;
+    }
+
+    .img-container{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        border: 1px solid #d9dff0;
+    }
+    a{
+        color: $dark-gray-color;
+    }
+    .nav-pills .nav-link{
+      border-radius: unset;
+    }
+
+    .nav-pills .nav-link.active, 
+    .nav-pills .show>.nav-link{
+      color: $dark-gray-color;
+      background-color: transparent;
+      border-bottom: 3px solid $blue-color;
+    }
+
+    .tab-container{
+        -webkit-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
+        -moz-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
+        box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
+        background: $white-color;
+        max-width: 161px;
+    }
+    .info{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .small-text{
+        font-size: 12px;
+        span{
+            color: $light-blue-color;
+        }
+    }
+}
+
+// Subscribe section
+.subscribe-bg{
+    @include linearGradient(120deg, $dark-blue-color, $dark-purple-color);
+
+    .form-control{
+      padding: 22px 5px;
+      color: $black-color;
+      border: none;
+      border-radius: 50px;
+    }
+    .input-group-text{
+      padding: 10px 15px;
+      color: $white-color;
+      background: $blue-color;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+}
+
+// Media Queries
+@media only screen and (max-width: 1200px) {
+    #library{
+      .video-img, .marketing-img, .content-img{
+        .library-card-header{
+            height: 144px;
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #library{
+        .video-img, .marketing-img, .content-img{
+            height: 104px;
+             .library-card-header{
+                 height: 104px;
+              }
+          }
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden{
+        display: none;
+    }
+    #library{
+        .video-img, .marketing-img, .content-img{
+            height: 252px;
+             .library-card-header{
+                 height: 252px;
+              }
+          }
+      }
+}
+
+@media only screen and (max-width: 480px) {
+    #library{
+      .video-img, .marketing-img, .content-img{
+          height: 223px;
+           .library-card-header{
+               height: 223px;
+            }
+        }
+    }
+    .subscribe-bg {
+        .form-control, .input-group-text{
+        font-size: 13px;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #library{
+      .video-img, .marketing-img, .content-img{
+        height: 184px;
+        .library-card-header{
+            height: 184px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #library{
+      .video-img, .marketing-img, .content-img{
+        height: 163px;
+        .library-card-header{
+            height: 163px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #library{
+        .video-img, .marketing-img, .content-img{
+          height: 129px;
+          background-size: cover;
+          .library-card-header{
+              height: 129px;
+              }
+          }
+      }
+    #topics .tab-container{
+      max-width: 161px
+   }
+}
+
+

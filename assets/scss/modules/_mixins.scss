@@ -1,0 +1,33 @@
+// Gradients
+@mixin linearGradient($deg, $firstColor, $secondColor){
+    background: $deg; /* Old browsers */
+    background: -moz-linear-gradient($deg, $firstColor, $secondColor); /* FF3.6+ */
+    background: -webkit-gradient($deg, $firstColor, $secondColor); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient($deg, $firstColor, $secondColor); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($deg, $firstColor, $secondColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient($deg, $firstColor, $secondColor); /* IE10+ */
+    background: linear-gradient($deg, $firstColor, $secondColor); /* W3C */
+}
+
+// Background library images
+$path: '../img';
+@mixin backgroundImg($img, $background-size, $height){
+    background-image: url('#{$path}/#{$img}');
+    background-repeat: no-repeat;
+    background-size: $background-size;
+    height: $height;
+}
+
+// Border radius
+@mixin topRadius($top-left, $top-right){
+    border-top-left-radius: $top-left;
+    border-top-right-radius: $top-right;
+}
+
+// Library Type
+@mixin lybraryType($padding, $bg-color,$max-width, $radius){
+    padding: $padding;
+    background-color: $bg-color;
+    max-width: $max-width;
+    border-radius: $radius;
+}

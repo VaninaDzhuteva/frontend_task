@@ -1,0 +1,11 @@
+// Bootstrap overrides
+.navbar-light .navbar-toggler{
+    border-color: $white-color !important;
+}
+
+// Media Queries
+@media only screen and (max-width: 320px) {
+    .navbar-brand img{
+        max-width: 100%;
+    }
+}

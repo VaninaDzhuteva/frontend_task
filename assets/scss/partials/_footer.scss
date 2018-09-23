@@ -1,0 +1,36 @@
+footer{
+    background-color: $light-gray-color;
+
+    .footer-header{
+        color: $footer-header-color;
+    }
+    .footer-link{
+        color: $footer-links-color;
+
+        &:hover{
+            color: $footer-links-hover;
+        }
+    }
+    .bottom-footer{
+        border-top: 1px solid #dce1ec;
+    }
+
+    .social-links li{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    footer{
+        text-align: center;
+        .row{
+            justify-content: center;
+        }
+        .bottom-footer{
+            text-align: center;
+            color: $footer-links-color;
+        }
+        
+    }
+
+}

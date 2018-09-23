@@ -1,1 +1,25 @@
-// Colors
+@import 'variables.scss';
+*{
+  font-family: 'Poppins', sans-serif;}
+
+a:hover{
+  text-decoration: none !important;
+}
+.btn{
+  background: $blue-color;
+  padding: 10px 40px !important;
+  border: none !important;
+  border-radius: 20px !important;}
+
+ul{
+  list-style-type: none;
+  padding: 0;}
+
+  @media only screen and (max-width: 320px) {
+    footer{
+        ul{
+          padding-bottom: 20px;
+      }
+    }
+
+}

@@ -20,9 +20,6 @@
         height: 173px;
       }
     }
-    .video .type{
-        @include lybraryType(5px, $types-blue-bg, 90px, 3px);
-    }
     // Second card
     .marketing-img{
         @include backgroundImg('marketing.png', contain ,173px);
@@ -33,9 +30,6 @@
         width: 100%;
         height: 173px;
       }
-    }
-    .marketing .type{
-        @include lybraryType(5px, $types-green-bg, 90px, 3px);
     }
     // Third card
     .content-img{
@@ -48,7 +42,55 @@
         height: 173px;
       }
     }
+    // Fourth card
+    .ads-img{
+        @include backgroundImg('ads.png', contain, 173px);
+        @include topRadius(5px, 5px);
+      .library-card-header{
+        @include linearGradient(120deg, $orange-gradient-color, $pink-gradient-color);  
+        @include topRadius(5px, 5px);
+        width: 100%;
+        height: 173px;
+      }
+    }
+    // Fifth card
+    .social-img{
+        @include backgroundImg('social.png', contain, 173px);
+        @include topRadius(5px, 5px);
+      .library-card-header{
+        @include linearGradient(120deg, $blue-gradient-color, $green-gradient-color);  
+        @include topRadius(5px, 5px);
+        width: 100%;
+        height: 173px;
+      }
+    }
+    // Sixth card
+    .retargeting-img{
+        @include backgroundImg('retargeting.png', contain ,173px);
+        @include topRadius(5px, 5px);
+      .library-card-header{
+        @include linearGradient(120deg, $blue-gradient-color-two, $purple-gradient-color);  
+        @include topRadius(5px, 5px);
+        width: 100%;
+        height: 173px;
+      }
+    }
     .content .type{
+        @include lybraryType(5px, $types-pink-bg, 90px, 3px);
+    }
+    .marketing .type{
+        @include lybraryType(5px, $types-green-bg, 90px, 3px);
+    }
+    .video .type{
+        @include lybraryType(5px, $types-blue-bg, 90px, 3px);
+    }
+    .ads .type{
+        @include lybraryType(5px, $types-green-bg, 90px, 3px);
+    }
+    .social .type{
+        @include lybraryType(5px, $types-blue-bg, 90px, 3px);
+    }
+    .retargeting .type{
         @include lybraryType(5px, $types-pink-bg, 90px, 3px);
     }
 }
@@ -91,11 +133,15 @@
         -moz-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
         box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
         background: $white-color;
-        max-width: 161px;
+        img{
+            float: left;
+        }
     }
     .info{
-        padding: 20px;
+        padding-top: 20px;
+        padding-left: 180px;
         font-size: 18px;
+        min-height: 179px;
     }
     .small-text{
         font-size: 12px;
@@ -107,16 +153,20 @@
 
 // Subscribe section
 .subscribe-bg{
-    @include linearGradient(120deg, $dark-blue-color, $dark-purple-color);
+    @include linearGradient(160deg, $dark-blue-color, $dark-purple-color);
 
+    h2{
+        font-size: 36px;
+    }
     .form-control{
-      padding: 22px 5px;
+      padding: 28px 45px;
       color: $black-color;
+      font-weight: bold;
       border: none;
       border-radius: 50px;
     }
     .input-group-text{
-      padding: 10px 15px;
+      padding: 10px 35px;
       color: $white-color;
       background: $blue-color;
       border: none;
@@ -128,7 +178,7 @@
 // Media Queries
 @media only screen and (max-width: 1200px) {
     #library{
-      .video-img, .marketing-img, .content-img{
+      .video-img, .marketing-img, .content-img, .ads-img, .social-img, .retargeting-img{
         .library-card-header{
             height: 144px;
         }
@@ -138,7 +188,7 @@
 
 @media only screen and (max-width: 992px) {
     #library{
-        .video-img, .marketing-img, .content-img{
+        .video-img, .marketing-img, .content-img, .content-img, .ads-img, .social-img, .retargeting-img{
             height: 104px;
              .library-card-header{
                  height: 104px;
@@ -147,43 +197,57 @@
       }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .hidden{
         display: none;
     }
     #library{
+        .library-card{
+            max-width: 363px;
+        }
         .video-img, .marketing-img, .content-img{
-            height: 252px;
+            height: 180px;
+            background-size: auto;
              .library-card-header{
-                 height: 252px;
+                 height: 180px;
               }
           }
       }
+    .center-content{
+      display: flex;
+      justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-    #library{
-      .video-img, .marketing-img, .content-img{
-          height: 223px;
-           .library-card-header{
-               height: 223px;
-            }
+    #topics {
+      .tab-container {
+        max-width: 161px;
+        img {
+        float: none; 
         }
+      }
+      .info{
+        min-height: auto;
+        padding: 10px 20px;
+      }
+      .nav-pills{
+          justify-content: center;
+      }
+      .center-content{
+          display: flex;
+          justify-content: center;
+      }
     }
-    .subscribe-bg {
-        .form-control, .input-group-text{
-        font-size: 13px;
-        }
-    }
-}
 
-@media only screen and (max-width: 400px) {
-    #library{
-      .video-img, .marketing-img, .content-img{
-        height: 184px;
-        .library-card-header{
-            height: 184px;
-            }
+    .subscribe-bg {
+        .form-control{
+          font-size: 14px;
+          padding: 28px 20px;
+        }
+        .input-group-text{
+          font-size: 14px;
+          padding: 10px 20px;
         }
     }
 }

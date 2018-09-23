@@ -3,6 +3,45 @@
     border-color: $white-color !important;
 }
 
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding-right: 30px !important;
+    padding-left: 0 !important;
+}
+
+span{
+  border-right: 3px solid $white-color;
+  padding-right: 15px;
+}
+
+.sign-up-button{
+    margin-right: -45px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-light .navbar-nav .nav-link{
+        padding-right: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-start;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding-right: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    span{
+        border: none;
+    }
+}
+
 // Media Queries
 @media only screen and (max-width: 320px) {
     .navbar-brand img{

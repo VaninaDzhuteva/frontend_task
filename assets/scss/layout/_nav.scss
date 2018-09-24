@@ -6,10 +6,18 @@
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
 }
-
 .navbar-light .navbar-nav .nav-link{
-    padding-right: 30px !important;
-    padding-left: 0 !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    transition: all 0.2s ease-in;
+    &:hover{
+      border-bottom: 2px solid $white-color;
+      transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+    }
 }
 
 span{
@@ -37,8 +45,12 @@ span{
 }
 
 @media only screen and (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link{
+        text-align: center;
+    }
     span{
         border: none;
+        padding: 0;
     }
 }
 

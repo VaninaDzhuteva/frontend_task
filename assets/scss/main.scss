@@ -1,7 +1,8 @@
-@import 'modules/_base.scss';
-@import 'modules/mixins.scss';
-@import 'modules/variables.scss';
-@import 'partials/_content.scss';
-@import 'partials/_footer.scss';
-@import 'partials/_header.scss';
-@import 'partials/_nav.scss';
+@import 'helpers/_animations.scss';
+@import 'helpers/_base.scss';
+@import 'helpers/mixins.scss';
+@import 'helpers/variables.scss';
+@import 'layout/_content.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_header.scss';
+@import 'layout/_nav.scss';

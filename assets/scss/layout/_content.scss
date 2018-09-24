@@ -114,6 +114,7 @@
         border-radius: 50px;
         border: 1px solid #d9dff0;
     }
+
     a{
         color: $dark-gray-color;
     }
@@ -172,6 +173,24 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
+    }
+
+    #message-container{
+        background: $white-color;
+        padding: 1px;
+        border-radius: 35px;
+        
+        #errorMessage p{
+            color: $types-pink-bg;
+            padding-top: 10px;
+        }
+        #successMessage p{
+            color: $types-green-bg;
+            padding-top: 10px;
+        }
+    }
+    .hide{
+        opacity: 0;
     }
 }
 

@@ -1,6 +1,29 @@
 //Library section
 #library{
+  //Back to top button
+  #scrollBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $dark-green-bg;
+    color: $white-color;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
 
+    &:hover{
+      background-color: $light-green-bg;
+    }
+
+    img{
+      width: 45px;
+      height: 45px;
+    }
+  }
     .gray-text{
         color: $gray-color;
     }

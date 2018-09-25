@@ -216,6 +216,25 @@ ul {
   footer ul {
     padding-bottom: 20px; } }
 
+#library #scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3baeac;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px; }
+  #library #scrollBtn:hover {
+    background-color: #46c4b4; }
+  #library #scrollBtn img {
+    width: 45px;
+    height: 45px; }
+
 #library .gray-text {
   color: #8898ab; }
 

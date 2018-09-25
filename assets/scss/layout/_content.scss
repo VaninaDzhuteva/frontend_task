@@ -1,6 +1,10 @@
+//Library section
 #library{
+
     .gray-text{
-        color: $gray-color;}
+        color: $gray-color;
+    }
+
     .library-card{
         -webkit-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
         -moz-box-shadow: 3px 13px 28px -5px rgba(0,0,0,0.27);
@@ -24,6 +28,7 @@
     .marketing-img{
         @include backgroundImg('marketing.png', contain ,173px);
         @include topRadius(5px, 5px);
+
       .library-card-header{
         @include linearGradient(160deg, $blue-gradient-color-two, $purple-gradient-color);  
         @include topRadius(5px, 5px);
@@ -35,6 +40,7 @@
     .content-img{
         @include backgroundImg('content.png', contain, 173px);
         @include topRadius(5px, 5px);
+
       .library-card-header{
         @include linearGradient(160deg, $orange-gradient-color, $pink-gradient-color);  
         @include topRadius(5px, 5px);
@@ -46,6 +52,7 @@
     .ads-img{
         @include backgroundImg('ads.png', contain, 173px);
         @include topRadius(5px, 5px);
+
       .library-card-header{
         @include linearGradient(160deg, $orange-gradient-color, $pink-gradient-color);  
         @include topRadius(5px, 5px);
@@ -57,6 +64,7 @@
     .social-img{
         @include backgroundImg('social.png', contain, 173px);
         @include topRadius(5px, 5px);
+
       .library-card-header{
         @include linearGradient(160deg, $blue-gradient-color, $green-gradient-color);  
         @include topRadius(5px, 5px);
@@ -68,6 +76,7 @@
     .retargeting-img{
         @include backgroundImg('retargeting.png', contain ,173px);
         @include topRadius(5px, 5px);
+
       .library-card-header{
         @include linearGradient(160deg, $blue-gradient-color-two, $purple-gradient-color);  
         @include topRadius(5px, 5px);
@@ -75,6 +84,7 @@
         height: 173px;
       }
     }
+    //Type of card
     .content .type{
         @include lybraryType(5px, $types-pink-bg, 90px, 3px);
     }
@@ -95,10 +105,6 @@
     }
 
     //Json info styling
-    .floated{
-        float: left;
-    }
-
     .overlay-img{
         max-width: 100%;
     }
@@ -173,6 +179,7 @@
     h2{
         font-size: 36px;
     }
+
     .form-control{
       padding: 28px 45px;
       color: $black-color;
@@ -180,6 +187,7 @@
       border: none;
       border-radius: 50px;
     }
+
     .input-group-text{
       padding: 10px 35px;
       color: $white-color;
@@ -213,7 +221,7 @@
     #library{
       .video-img, .marketing-img, .content-img, .ads-img, .social-img, .retargeting-img{
         .library-card-header{
-            height: 144px;
+          height: 144px;
         }
       }
     }
@@ -221,38 +229,38 @@
 
 @media only screen and (max-width: 992px) {
     #library{
-        .video-img, .marketing-img, .content-img, .content-img, .ads-img, .social-img, .retargeting-img{
-            height: 104px;
-             .library-card-header{
-                 height: 104px;
+        .video-img, .marketing-img, .content-img, .ads-img, .social-img, .retargeting-img{
+          height: 104px;
+            .library-card-header{
+              height: 104px;
               }
           }
         .second-lybrary{
-            height: 104px !important;
+          height: 104px !important;
         }
         .floated{
-            float: right;
+          float: right;
         }
     }
 }
 
 @media only screen and (max-width: 767px) {
     .hidden{
-        display: none;
+      display: none;
     }
     #library{
         .library-card{
-            max-width: 363px;
+          max-width: 363px;
         }
-        .video-img, .marketing-img, .content-img{
-            height: 180px;
-            background-size: auto;
-             .library-card-header{
-                 height: 180px;
-              }
+        .video-img, .marketing-img, .content-img, .ads-img, .social-img, .retargeting-img{
+          height: 180px;
+          background-size: auto;
+            .library-card-header{
+              height: 180px;
+            }
           }
         .second-lybrary{
-            height: 180px !important;
+          height: 180px !important;
         }
       }
     .center-content{
@@ -274,11 +282,11 @@
         padding: 10px 20px;
       }
       .nav-pills{
-          justify-content: center;
+        justify-content: center;
       }
       .center-content{
-          display: flex;
-          justify-content: center;
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -296,10 +304,10 @@
 
 @media only screen and (max-width: 360px) {
     #library{
-      .video-img, .marketing-img, .content-img{
+      .video-img, .marketing-img, .content-img, .ads-img, .social-img, .retargeting-img{
         height: 163px;
         .library-card-header{
-            height: 163px;
+          height: 163px;
             }
         }
     }
@@ -307,20 +315,18 @@
 
 @media only screen and (max-width: 320px) {
     #library{
-        .video-img, .marketing-img, .content-img{
+        .video-img, .marketing-img, .content-img, .ads-img, .social-img, .retargeting-img{
           height: 129px;
           background-size: cover;
           .library-card-header{
-              height: 129px;
-              }
-          }
+            height: 129px;
+            }
+        }
         .second-lybrary{
-            height: 129px !important;
+          height: 129px !important;
         }
       }
     #topics .tab-container{
       max-width: 161px
    }
 }
-
-

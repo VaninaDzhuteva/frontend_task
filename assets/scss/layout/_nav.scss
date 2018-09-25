@@ -2,7 +2,6 @@
 .navbar-light .navbar-toggler{
     border-color: $white-color !important;
 }
-
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
 }
@@ -19,44 +18,42 @@
       -webkit-transform: translateY(-5px);
     }
 }
-
+//New styling
 span{
   border-right: 3px solid $white-color;
   padding-right: 15px;
 }
 
 .sign-up-button{
-    margin-right: -45px;
+  margin-right: -45px;
 }
 
+// Media Queries
 @media only screen and (max-width: 1200px) {
     .navbar-light .navbar-nav .nav-link{
-        padding-right: 25px !important;
+      padding-right: 5px !important;
+      padding-left: 5px !important;
     }
 }
 
 @media only screen and (max-width: 1160px) {
     .navbar-expand-lg .navbar-collapse{
-        justify-content: flex-start;
-    }
-    .navbar-light .navbar-nav .nav-link{
-        padding-right: 10px !important;
+      justify-content: flex-start;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .navbar-light .navbar-nav .nav-link{
-        text-align: center;
+      text-align: center;
     }
     span{
-        border: none;
-        padding: 0;
+      border: none;
+      padding: 0;
     }
 }
 
-// Media Queries
 @media only screen and (max-width: 320px) {
     .navbar-brand img{
-        max-width: 100%;
+      max-width: 100%;
     }
 }

@@ -18,7 +18,10 @@ const getData = () => {
     xhr.onreadystatechange = function(){
         // if request has not been finished yet
         if(xhr.readyState < 4){
-            output.innerHTML = 'Loading..';
+            //remove animation
+            output.classList.remove('smooth');
+            //Loading animation
+            output.innerHTML = '<div class="d-flex justify-content-center mt-3"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>';  
         }
         // if request has finished processing
         else if(xhr.readyState == 4){
@@ -26,10 +29,9 @@ const getData = () => {
             if(xhr.status == 200 && xhr.status < 300){
                 // show the response
                 const libraryData = JSON.parse(this.responseText);               
-
+                output.classList.add('smooth');
                 //Looping through JSON data and adds it to the DOM
                 for (let i = 0; i < libraryData.length; i++ ){
-                    console.log((i+1) % 3);
                     if((i+1) % 3 == 0){
                         output.innerHTML = '<div class="row">' + `
                         ${libraryData.map(template).join('')}
@@ -53,7 +55,7 @@ const getData = () => {
 const template = (card) => {
     return `   
         <div class="col-sm-12 col-md-4 col-lg-4 center-content mt-4 floated">
-            <div class="library-card mb-4"> 
+            <div class="library-card two mb-4"> 
                 <div class="second-lybrary" style="background:${card.bgColor},url(${card.img}) no-repeat 50% 50% / cover; height: 173px;border-top-left-radius: 5px; border-top-right-radius: 5px;"></div>
                 <div class="card-content">
                     <div class="type text-white text-center" style="${card.typeStyle}">${card.type}</div>

@@ -55,13 +55,13 @@
 }
 
 // Opacity animation
-.show{
-    -moz-animation: show 10s 1;
-    -webkit-animation: show 10s 1;
-    animation: show 10s 1;
+.showMsg{
+    -moz-animation: showMsg 10s 1;
+    -webkit-animation: showMsg 10s 1;
+    animation: showMsg 10s 1;
 }
 
-@-moz-keyframes show{
+@-moz-keyframes showMsg{
     30%{
         opacity: 1;
     }
@@ -73,7 +73,7 @@
     }
 }
 
-@-webkit-keyframes show{
+@-webkit-keyframes showMsg{
     30%{
         opacity: 1;
     }
@@ -85,7 +85,7 @@
         opacity: 0;
     }
 }
-@keyframes show{
+@keyframes showMsg{
     20%{
         opacity: 1;
     }

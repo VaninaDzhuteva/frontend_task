@@ -1,0 +1,50 @@
+[
+    {
+       "img"  : "/assets/img/video.png",
+       "bgColor" : "linear-gradient(160deg,rgba(57, 186, 229, 0.8),rgba(150, 199, 116, 0.8))",
+       "type" : "Topic",
+       "typeStyle" : "padding: 5px; background-color: #4ec6f9; max-width: 90px; border-radius: 3px;",
+       "header"   : "YouTube Masterclass - Your Complete Guide to YouTube",
+       "text" : "Learn how to build an integrated online marketing plan for your organization, that considers all your channels, customers, goals, and values."
+    },
+    {
+        "img"  : "/assets/img/marketing.png",
+        "bgColor" : "linear-gradient(160deg,rgba(54, 186, 231, 0.8),rgba(162, 134, 228, 0.8))",
+        "type" : "Course",
+        "typeStyle" : "padding: 5px; background-color: #7fcf9a; max-width: 90px; border-radius: 3px;",
+        "header"   : "Marketing Psychology: How To Become A Master Of Influence",
+        "text" : "Learn how to build an integrated online marketing plan for your organization, that considers all your channels, customers, goals, and values."
+     },
+     {
+        "img"  : "/assets/img/content.png",
+        "bgColor" : "linear-gradient(160deg,rgba(246, 205, 171, 0.8),rgba(229, 129, 124, 0.8))",
+        "type" : "Tools",
+        "typeStyle" : "padding: 5px; background-color: #e07577; max-width: 90px; border-radius: 3px;",
+        "header"   : "Start a social media management business",
+        "text" : "Learn how to build an integrated online marketing plan for your organization, that considers all your channels, customers, goals, and values."
+     },
+     {
+        "img"  : "/assets/img/ads.png",
+        "bgColor" : "linear-gradient(160deg,rgba(246, 205, 171, 0.8),rgba(229, 129, 124, 0.8))",
+        "type" : "Course",
+        "typeStyle" : "padding: 5px; background-color: #7fcf9a; max-width: 90px; border-radius: 3px;",
+        "header"   : "YouTube Masterclass - Your Complete Guide to YouTube",
+        "text" : "Learn how to build an integrated online marketing plan for your organization, that considers all your channels, customers, goals, and values."
+     },
+     {
+         "img"  : "/assets/img/social.png",
+         "bgColor" : "linear-gradient(160deg,rgba(57, 186, 229, 0.8),rgba(150, 199, 116, 0.8))",
+         "type" : "Topic",
+         "typeStyle" : "padding: 5px; background-color: #4ec6f9; max-width: 90px; border-radius: 3px;",
+         "header"   : "Marketing Psychology: How To Become A Master Of Influence",
+         "text" : "Learn how to build an integrated online marketing plan for your organization, that considers all your channels, customers, goals, and values."
+      },
+      {
+         "img"  : "/assets/img/retargeting.png",
+         "bgColor" : "linear-gradient(160deg,rgba(54, 186, 231, 0.8),rgba(162, 134, 228, 0.8))",
+         "type" : "Tools",
+         "typeStyle" : "padding: 5px; background-color: #e07577; max-width: 90px; border-radius: 3px;",
+         "header"   : "Start a social media management business",
+         "text" : "Learn how to build an integrated online marketing plan for your organization, that considers all your channels, customers, goals, and values."
+      }
+]

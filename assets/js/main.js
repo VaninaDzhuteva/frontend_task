@@ -7,9 +7,9 @@ const formValidation = () => {
     //Message container
     const msgContainer = document.getElementById("message-container");
     //Error container
-    const errorMsg = document.getElementById('errorMessage');
+    let errorMsg = document.getElementById('errorMessage');
     //Success container
-    const successMsg = document.getElementById('successMessage'); 
+    let successMsg = document.getElementById('successMessage'); 
 
     //Check if the input field is empty
     if(emailValue === ''){
@@ -31,8 +31,7 @@ const formValidation = () => {
         errorMsg.innerHTML = "";
         successMsg.innerHTML = "<p>Congratulations! You subscribed to our weekly newsletter!</p>";
         msgContainer.classList.add("hide");
-        msgContainer.classList.add('show'); 
+        msgContainer.classList.add('showMsg'); 
         return true;
     }
-   
 }

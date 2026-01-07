@@ -2,6 +2,10 @@
 
 A small front-end application built as a technical task to demonstrate core JavaScript skills, DOM manipulation, and basic application structure using modern tooling.
 
+## 🚀 Live Demo
+
+🔗 https://vaninadzhuteva.github.io/frontend_task/
+
 ## 📝 Description
 
 This project represents a front-end task implementation focused on working with dynamic data, rendering UI elements, and handling user interactions in the browser.  
